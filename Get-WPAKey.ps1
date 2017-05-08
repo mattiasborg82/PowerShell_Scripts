@@ -1,12 +1,16 @@
 <#
-.Synopsis Get-WPAKey is a function to extract the WPA key for a specific SSID
-.DESCRIPTION Get the WPA key in clear text
-.EXAMPLE Get-WPAkey -SSID "MySSID"
-.EXAMPLE Get-WPAkey
-.NOTES Created by Mattias Borg 2015
- SEC-LABS R&D
-
+.Synopsis
+   Get-WPAKey to extract the WPA key for a specific SSID
+.DESCRIPTION
+   Get the WPA Key, authentication type, SSIDName from all SSID profiles in the computer
+.EXAMPLE
+   Get-WPAkey
+.EXAMPLE
+   Get-WPAkey -SSID "MySSID"
+.NOTES
+   SEC-LABS R&D
 #>
+
 param([Parameter(Mandatory=$FALSE,
 ValueFromPipelineByPropertyName=$FALSE,
 Position=0)]
